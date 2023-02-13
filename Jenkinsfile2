@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Performance Testing') {
+            steps {
+                bat 'k6 run Timesheet_Code_2.js'
+            }
+        }
+    }
+}
